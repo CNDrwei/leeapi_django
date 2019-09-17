@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 import os, django
 
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'luffyapi.settings.dev')
 django.setup()
 
@@ -21,15 +22,15 @@ app.conf.enable_utc = False
 # 任务的定时配置
 from datetime import timedelta
 from celery.schedules import crontab
-
 app.conf.beat_schedule = {
-    'low-task': {
-        'task': 'celery_task.tasks.low',
-        'schedule': timedelta(seconds=3),
+    'django-task': {
+        'task': 'celery_task.tasks.django_task',
+        'schedule': timedelta(seconds=60 * 60),
         # 'schedule': crontab(hour=8, day_of_week=1),  # 每周一早八点
-        'args': (300, 150),
-    }
+        'args': (),
+    },
 }
 
 # 启动 添加任务 服务的命令
 # celery worker -A celery_task -l info -P eventlet
+
