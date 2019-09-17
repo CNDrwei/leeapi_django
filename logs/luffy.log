@@ -262,3 +262,122 @@ INFO 2019-09-11 21:47:31,808 autoreload 597 Watching for file changes with StatR
 INFO 2019-09-11 21:48:16,802 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-09-17 08:34:01,832 autoreload 217 F:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
 INFO 2019-09-17 08:34:03,847 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 21:59:56,466 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:03:01,690 autoreload 217 F:\luffy\luffyapi\manage.py changed, reloading.
+INFO 2019-09-17 22:03:03,799 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:03:28,553 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-09-17 22:04:38,098 log 228 Internal Server Error: /home/banners
+Traceback (most recent call last):
+  File "F:\Virtualenvs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "F:\Virtualenvs\luffy\lib\site-packages\django\utils\deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "F:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "F:\Virtualenvs\luffy\lib\site-packages\django\middleware\common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via PATCH, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PATCH data. Change your form to point to 127.0.0.1:8000/home/banners/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2019-09-17 22:04:38,102 basehttp 154 "PATCH /home/banners HTTP/1.1" 500 68647
+WARNING 2019-09-17 22:05:22,995 log 228 Method Not Allowed: /home/banners/
+WARNING 2019-09-17 22:05:22,996 basehttp 154 "PATCH /home/banners/ HTTP/1.1" 405 47
+INFO 2019-09-17 22:05:28,718 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 2
+INFO 2019-09-17 22:05:52,361 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:05:54,347 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 2
+INFO 2019-09-17 22:06:10,003 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-09-17 22:06:10,328 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4151
+INFO 2019-09-17 22:06:10,410 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-09-17 22:06:10,444 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-09-17 22:06:10,446 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-09-17 22:06:10,446 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-09-17 22:06:10,447 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-09-17 22:06:10,469 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4158
+INFO 2019-09-17 22:06:10,489 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-09-17 22:06:10,492 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-09-17 22:06:10,499 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-09-17 22:06:10,499 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-09-17 22:06:10,513 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-09-17 22:06:10,521 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-09-17 22:06:10,528 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-09-17 22:06:10,540 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-09-17 22:06:10,547 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-09-17 22:06:10,642 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+WARNING 2019-09-17 22:06:11,482 log 228 Not Found: /favicon.ico
+WARNING 2019-09-17 22:06:11,484 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2204
+INFO 2019-09-17 22:06:15,160 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-09-17 22:06:15,316 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13276
+INFO 2019-09-17 22:06:15,393 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-09-17 22:06:15,399 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-09-17 22:06:15,400 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-09-17 22:06:15,401 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-09-17 22:06:20,528 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 23135
+INFO 2019-09-17 22:06:20,599 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-09-17 22:06:20,614 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-09-17 22:06:20,619 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-09-17 22:06:20,623 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-09-17 22:06:20,628 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-09-17 22:06:20,629 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-09-17 22:06:20,640 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-09-17 22:06:22,310 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18665
+INFO 2019-09-17 22:06:22,364 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-09-17 22:06:22,365 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-09-17 22:06:22,377 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-09-17 22:06:22,387 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2019-09-17 22:08:00,200 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2019-09-17 22:08:00,281 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 19017
+INFO 2019-09-17 22:08:00,379 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-09-17 22:08:31,601 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2019-09-17 22:08:31,693 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 19017
+INFO 2019-09-17 22:08:31,756 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-09-17 22:08:56,255 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2019-09-17 22:08:56,333 basehttp 154 "GET /xadmin/home/banner/add/ HTTP/1.1" 200 19017
+INFO 2019-09-17 22:08:56,397 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-09-17 22:09:24,771 basehttp 154 "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2019-09-17 22:09:25,015 basehttp 154 "GET /xadmin/home/banner/ HTTP/1.1" 200 26313
+INFO 2019-09-17 22:09:25,082 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-09-17 22:09:25,093 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-09-17 22:09:28,343 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 351
+INFO 2019-09-17 22:09:48,055 basehttp 154 "GET /media/banner/banner4.png HTTP/1.1" 200 361097
+INFO 2019-09-17 22:11:19,076 autoreload 217 F:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2019-09-17 22:11:21,167 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:11:26,902 autoreload 217 F:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2019-09-17 22:11:28,886 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:11:30,508 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 351
+INFO 2019-09-17 22:19:51,471 autoreload 217 F:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2019-09-17 22:19:53,614 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:19:58,126 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:20:14,063 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:20:18,379 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:20:20,473 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:20:36,468 autoreload 217 F:\luffy\luffyapi\luffyapi\apps\home\views.py changed, reloading.
+INFO 2019-09-17 22:20:38,611 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:20:41,432 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:20:44,409 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:24:56,476 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:25:01,490 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:25:04,699 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:25:08,923 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:26:17,469 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:26:19,702 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:26:22,579 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:26:24,084 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:26:24,868 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:26:25,445 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:26:26,139 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:26:30,686 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:29:11,138 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-09-17 22:29:13,870 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:29:17,145 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:29:20,910 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:29:27,099 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:29:32,320 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:36:20,051 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:36:24,417 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:37:42,826 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:37:43,723 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:37:44,597 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:37:45,497 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:37:46,427 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:37:47,438 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 301
+INFO 2019-09-17 22:37:48,500 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 227
+INFO 2019-09-17 22:37:49,625 basehttp 154 "GET /home/banners/ HTTP/1.1" 200 227
+INFO 2019-09-17 22:45:17,347 autoreload 217 F:\luffy\luffyapi\luffyapi\settings\dev.py changed, reloading.
