@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'corsheaders',
 
 
+
+
     'apps.user',
     'apps.home',
 ]
